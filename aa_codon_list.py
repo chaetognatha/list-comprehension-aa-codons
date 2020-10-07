@@ -4,7 +4,7 @@ I wanted to see if I could adapt it to list codons given the amino acid, and it 
 """
 nts = "tcag" #nucleotides in genetic code
 cods = [a + b + c for a in nts for b in nts for c in nts] #generates a list of all possible three letter combinations from nucleotides
-aas = 'FFLLSSSSYY**CC*WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG' #string to assigne amino acids to nucleotides
+aas = 'FFLLSSSSYY**CC*WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG' #string to assign amino acids to nucleotides
 cods_tabl = dict(zip(cods, aas)) # make a dictionary from codons and amino acids
 leu = ['tta', 'ttg', 'ctt', 'ctc', 'cta', 'ctg'] # hard coded list of codons for L for comparison
 print("the correct answer should be: ", "\n", leu) 
